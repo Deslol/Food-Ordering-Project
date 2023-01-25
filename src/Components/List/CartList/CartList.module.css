@@ -1,0 +1,11 @@
+.cartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cartContainer {
+  padding: 12px;
+  background-color: #fffbeb;
+  border-radius: 16px;
+}

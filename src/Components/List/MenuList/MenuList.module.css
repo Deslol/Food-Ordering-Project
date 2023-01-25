@@ -1,0 +1,22 @@
+.itemContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fffbeb;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.userOperationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.orderAmount {
+}

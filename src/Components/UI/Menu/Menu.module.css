@@ -1,0 +1,20 @@
+.menuContainer {
+  background-color: #d4d4d4;
+  padding: 48px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 45rem;
+}
+
+.menuContainer ul {
+  list-style: none;
+}
+
+.menuContainer ul li {
+}
+
+.menuList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
