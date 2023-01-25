@@ -15,7 +15,7 @@ const Modal = (props) => {
   return (
     <div className={classes.modal}>
       <button onClick={props.onClose} className={classes.btnClose}>
-        x
+        x Close
       </button>
       <div className={classes.cartList}>
         {atc.basket.map((item) => (
