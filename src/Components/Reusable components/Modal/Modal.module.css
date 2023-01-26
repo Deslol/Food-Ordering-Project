@@ -49,10 +49,14 @@
   padding: 4px;
   border-radius: 100px;
   border: none;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   cursor: pointer;
 }
 
 .priceContainer {
   margin: 16px 0;
+}
+
+.orderSummary {
+  margin-bottom: 12px;
 }

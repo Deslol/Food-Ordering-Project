@@ -17,6 +17,7 @@ const Modal = (props) => {
       <button onClick={props.onClose} className={classes.btnClose}>
         x Close
       </button>
+      <h1 className={classes.orderSummary}>Order Summary</h1>
       <div className={classes.cartList}>
         {atc.basket.map((item) => (
           <CartList
