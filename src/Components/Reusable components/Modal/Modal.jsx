@@ -29,6 +29,7 @@ const Modal = (props) => {
           />
         ))}
       </div>
+
       <div className={classes.priceContainer}>
         <h3>Total price:</h3>
         <h2>${totalPrice.toFixed(2)}</h2>
