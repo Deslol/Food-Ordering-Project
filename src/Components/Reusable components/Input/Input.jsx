@@ -6,8 +6,9 @@ const Input = (props) => {
   return (
     <input
       className={classes.inputField}
-      placeholder={props.placeholder}
-      onChange={props.onChange}
+      // placeholder={props.placeholder}
+      // onChange={props.onChange}
+      {...props.input}
     >
       {props.children}
     </input>

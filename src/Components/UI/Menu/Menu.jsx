@@ -5,6 +5,8 @@ import classes from './Menu.module.css';
 import MenuList from '../../List/MenuList/MenuList';
 import DumContext from '../../context/dummy-context';
 
+import Card from '../../Reusable components/Card/Card';
+
 const Menu = () => {
   const { meal } = useContext(DumContext);
   console.log(meal);

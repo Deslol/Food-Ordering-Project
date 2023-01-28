@@ -4,6 +4,8 @@ import classes from './NavigationBar.module.css';
 
 import mealImg from '../../../assets/meals.jpeg';
 
+import CartIcon from '../CartIcon/CartIcon';
+
 import Button from '../../Reusable components/Button/Button.jsx';
 import addToCartCtx from '../../context/add-to-cart-context';
 const NavigationBar = ({ onBasketClick }) => {
@@ -18,9 +20,9 @@ const NavigationBar = ({ onBasketClick }) => {
       <div className={classes.header}>
         <h1 className='company-name'>ReactMeals</h1>
         <Button className={classes.checkoutBtn} onClick={onBasketClick}>
-          <img className={classes.cartIcon}></img>
+          <CartIcon />
           <span className={classes.cartText}>Your cart</span>
-          <span className={classes.itemCounter}>{count}</span>
+          <span className={classes.badge}>{count}</span>
         </Button>
         {/* when clicked display the cart modal*/}
       </div>

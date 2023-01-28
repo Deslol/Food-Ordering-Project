@@ -7,6 +7,7 @@ import Button from '../../Reusable components/Button/Button';
 import Input from '../../Reusable components/Input/Input';
 
 import addToCartCtx from '../../context/add-to-cart-context';
+import { propNames } from '@chakra-ui/react';
 
 const MenuList = ({ id, name, description, price }) => {
   const atc = useContext(addToCartCtx);
@@ -21,7 +22,15 @@ const MenuList = ({ id, name, description, price }) => {
       <div className={classes.userOperationContainer}>
         <span className={classes.orderAmount}>
           <p>Amount</p>{' '}
-          <Input placeholder='0' onChange={atc.inputChangeHandler} />
+          <Input
+            input={{
+              id: 'amount_' + { id },
+              type: 'number',
+              placeholder: '0',
+              onChange: atc.inputChangeHandler,
+            }}
+            // placeholder='0' onChange={atc.inputChangeHandler}
+          />
         </span>
         <Button className='btn-atc' value={id} onClick={atc.addHandler}>
           + Add
